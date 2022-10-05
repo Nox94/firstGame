@@ -1,0 +1,5 @@
+.game__cell-christ-image {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(50%);
+}
