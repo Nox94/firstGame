@@ -1,6 +1,6 @@
 // ячейка поля
-const cell = document.querySelector('.game__cell');
-
+let cell = document.querySelector('.game__cell');
+console.log(cell);
 // иконка крестика
 const christ = document.createElement('img'); // создает 
 christ.setAttribute('src', './images/christ.png'); // добавляет атрибут и значение атрибута
