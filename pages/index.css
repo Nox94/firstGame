@@ -1,7 +1,6 @@
+@import url('../vendor/normalize.css');
 @import url("../blocks/game/game.css");
-
 @import url("../blocks/game/__container/game__container.css");
 @import url("../blocks/game/__container/game__container-row.css");
 @import url("../blocks/game/__cell/game__cell.css");
-@import url('../blocks/game/__cell/game__cell-christ-image.css');
 @import url("../blocks/game/__button/game__button.css");

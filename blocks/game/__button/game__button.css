@@ -3,9 +3,10 @@
   height: 50px;
   border-radius: 6px;
   background-color: darkslateblue;
-  color: wheat;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   margin: 30px 0 0 0;
   font-size: large;
   border: none;
+  text-transform: uppercase;
 }
