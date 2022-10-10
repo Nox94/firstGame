@@ -1,9 +1,6 @@
 // все ячейки поля
 const cells = document.querySelectorAll(".game__cell");
 const againButton = document.querySelector(".game__button");
-var iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
-
-console.log(cells);
 
 // счетчик для подсчета количества кликов по ячейкам
 let i = 0;
@@ -59,9 +56,7 @@ function checkForWin() {
     });
   }
 }
-if(iOS != null) {
-  cells.forEach((cell) => cell.addEventListener("touchstart", () => handleCellClick(cell)));
-}
+
 // слушатель по клику на каждую ячейку
 cells.forEach((cell) => cell.addEventListener("click", () => handleCellClick(cell)));
 
