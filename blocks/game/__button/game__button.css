@@ -9,4 +9,14 @@
   font-size: large;
   border: none;
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .game__button {
+    width: 350px;
+    height: 70px;
+    font-size: x-large;
+  }
 }
