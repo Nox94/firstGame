@@ -2,7 +2,6 @@
 const cells = document.querySelectorAll(".game__cell");
 const againButton = document.querySelector(".game__button");
 var iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
-var eventt = "click";
 
 console.log(cells);
 
@@ -60,10 +59,10 @@ function checkForWin() {
     });
   }
 }
-if(iOS != null)
-    eventt = "touchstart";
+if(iOS != null) {
+  cells.forEach((cell) => cell.addEventListener("touchstart", () => handleCellClick(cell)));
+}
 // слушатель по клику на каждую ячейку
 cells.forEach((cell) => cell.addEventListener("click", () => handleCellClick(cell)));
-cells.forEach((cell) => cell.addEventListener(eventt, () => handleCellClick(cell)));
 
 againButton.addEventListener("click", handleButtonClick);
