@@ -60,6 +60,6 @@ function checkForWin() {
 }
 
 // слушатель по клику на каждую ячейку
-cells.forEach((cell) => cell.addEventListener("pointerdown", () => handleCellClick(cell)));
+cells.forEach((cell) => cell.addEventListener("click", () => handleCellClick(cell)));
 
 againButton.addEventListener("click", handleButtonClick);
